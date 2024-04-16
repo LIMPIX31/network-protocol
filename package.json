@@ -1,0 +1,24 @@
+{
+  "name": "network-protocol",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "app"
+  ],
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "@ltos/config-eslint": "0.0.3",
+    "@ltos/config-prettier": "0.0.1",
+    "@types/bun": "1.1.0",
+    "eslint": "9.0.0",
+    "prettier": "3.2.5",
+    "turbo": "1.13.2",
+    "typescript": "5.4.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
