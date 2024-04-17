@@ -2,6 +2,12 @@
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local"],
   "pipeline": {
+    "setup": {
+      "outputs": ["dist/**"]
+    },
+    "wasm:dev": {
+      "cache": false
+    },
     "dev": {
       "cache": false,
       "persistent": true

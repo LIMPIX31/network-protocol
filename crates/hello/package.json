@@ -1,0 +1,14 @@
+{
+  "name": "@crate/hello",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "module": "dist/crate.js",
+  "types": "dist/crate.d.ts",
+  "scripts": {
+    "wasm:dev": "rswasm dev"
+  },
+  "devDependencies": {
+    "@repo/rswasm": "workspace:*"
+  }
+}
