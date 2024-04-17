@@ -1,0 +1,22 @@
+{
+  "name": "@repo/rswasm",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "rswasm": "dist/bin.js"
+  },
+  "scripts": {
+    "setup": "tsup"
+  },
+  "dependencies": {
+    "clipanion": "4.0.0-rc.3",
+    "smol-toml": "1.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "@types/bun": "1.1.0",
+    "tsup": "8.0.2",
+    "@repo/tsconfig": "workspace:*"
+  }
+}
