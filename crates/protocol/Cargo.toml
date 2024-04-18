@@ -1,0 +1,18 @@
+[package]
+name = "net_protocol"
+version = "0.1.0"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+
+[dependencies]
+wasm-bindgen = { workspace = true }
+js-sys       = { workspace = true }
+serde        = { workspace = true }
+
+ciborium = { version = "0.2" }
+
+[lints]
+workspace = true
