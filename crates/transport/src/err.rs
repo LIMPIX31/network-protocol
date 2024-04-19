@@ -49,11 +49,11 @@ impl JsErrorRepr {
 	}
 }
 
-impl Into<JsValue> for Error {
-	fn into(self) -> JsValue {
-		match self {
-			Self::Js(it) => JsErrorRepr::new("js", Some(it)),
-			Self::TypeMismatch => JsErrorRepr::new("type_mismatch", None),
+impl From<Error> for JsValue {
+	fn from(value: Error) -> Self {
+		match value {
+			Error::Js(it) => JsErrorRepr::new("js", Some(it)),
+			Error::TypeMismatch => JsErrorRepr::new("type_mismatch", None),
 		}
 		.into()
 	}
