@@ -1,14 +1,7 @@
-pub fn add(left: usize, right: usize) -> usize {
-	left + right
-}
+mod err;
+mod hub;
+mod port;
 
-#[cfg(test)]
-mod tests {
-	use super::*;
-
-	#[test]
-	fn it_works() {
-		let result = add(2, 2);
-		assert_eq!(result, 4);
-	}
-}
+pub use err::{Error, Result};
+pub use hub::Hub;
+pub use port::Port;

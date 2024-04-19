@@ -11,6 +11,7 @@ readme     = "readme.md"
 
 [workspace.dependencies]
 tracing              = { version = "0.1" }
+thiserror            = { version = "1" }
 wasm-bindgen         = { version = "0.2" }
 wasm-bindgen-futures = { version = "0.4" }
 js-sys               = { version = "0.3" }
@@ -19,6 +20,22 @@ serde                = { version = "1", features = ["derive"] }
 net_transport        = { path = "crates/transport" }
 net_proc_macros      = { path = "crates/proc_macros" }
 net_shared           = { path = "crates/shared" }
+
+[workspace.dependencies.web-sys]
+version = "0.3"
+features = [
+	"console",
+	"MessageEvent",
+	"RtcPeerConnection",
+	"RtcSignalingState",
+	"RtcSdpType",
+	"RtcSessionDescriptionInit",
+	"RtcPeerConnectionIceEvent",
+	"RtcIceCandidate",
+	"RtcDataChannel",
+	"RtcDataChannelEvent",
+	"RtcConfiguration"
+]
 
 [workspace.lints.rust]
 [workspace.lints.clippy]
