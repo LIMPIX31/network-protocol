@@ -8,6 +8,14 @@ repository.workspace = true
 readme.workspace = true
 
 [dependencies]
+net_shared           = { workspace = true }
+
+tracing              = { workspace = true }
+thiserror            = { workspace = true }
+wasm-bindgen         = { workspace = true }
+web-sys              = { workspace = true }
+js-sys               = { workspace = true }
+wasm-bindgen-futures = { workspace = true }
 
 [lints]
 workspace = true

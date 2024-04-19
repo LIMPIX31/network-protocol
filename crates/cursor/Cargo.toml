@@ -11,30 +11,17 @@ readme.workspace = true
 crate-type = ["cdylib"]
 
 [dependencies]
+net_transport            = { workspace = true }
 net_shared               = { workspace = true }
 
 tracing                  = { workspace = true }
 wasm-bindgen             = { workspace = true }
+web-sys                  = { workspace = true }
 js-sys                   = { workspace = true }
 wasm-bindgen-futures     = { workspace = true }
 
 console_error_panic_hook = { version = "0.1.7" }
 async-channel            = { version = "2" }
-
-[dependencies.web-sys]
-version = "0.3"
-features = [
-	"console",
-	"MessageEvent",
-	"RtcPeerConnection",
-	"RtcSignalingState",
-	"RtcSdpType",
-	"RtcSessionDescriptionInit",
-	"RtcPeerConnectionIceEvent",
-	"RtcIceCandidate",
-	"RtcDataChannel",
-	"RtcDataChannelEvent",
-]
 
 [lints]
 workspace = true
